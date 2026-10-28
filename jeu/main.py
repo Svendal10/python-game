@@ -1,10 +1,22 @@
-#afficher le menu du jeu 
-# mettre en place le système de combat entre le héros et le monstre
-    # Vérifier la vie du héros et du monstre
-    # si la vie du héros passe à 0, afficher un message de défaite et terminer le jeu
-    # si la vie du monstre passe à 0, afficher un message de victoire et terminer le combat
-    # si les deux ont encore de la vie, continuer le combat
-    # faire en sorte que le héros attaque le monstre et le monstre attaque le héros
-    # 
-# éviter que le héros ou le monstre ait une vie négative
+# afficher le menu du jeu : 
+def afficher_menu():
+    print ("JEU RPG !")
+    # commencer la partie 
+    print ("1. Commencer la partie")
+    # afficher le classement 
+    print ("2. Afficher le classement")
+    # quitter le jeu 
+    print ("3. Quitter le jeu")
 
+
+# affichace du classement :
+def afficher_classement(): 
+    print ("CLASSEMENT DES JOUEURS :")
+    # récupérer les scores des joueurs dans la base de données
+    
+    # affichage en rang / pseudo / score / date de la partie
+    # si aucun score n'a été enregistré, afficher un message "aucun score enregistré"
+
+# si le joueur choisit de commencer la partie, lancer le jeu
+# si le joueur choisit d'afficher le classement, afficher le classement et revenir au menu principal
+# si le joueur choisit de quitter le jeu, fermer l'application
