@@ -1,12 +1,12 @@
 import pymongo 
 # fonction pour initialiser la base de données MongoDB avec les personnages et les monstres
 def init_database():
-    # Connexion au client MongoDB local
+    # Connexion au client mongoDB local
     client = pymongo.MongoClient("mongodb://localhost:27017/")
     # Sélection de la base de données
     db = client["game_db"]
-    db["characters"].drop()  # Supprimer la collection si elle existe déjà
-    db["monsters"].drop()  # Supprimer la collection si elle existe déjà
+    db["characters"].drop()
+    db["monsters"].drop()  
     # Définition de la liste des 10 personnages jouables
     characters = [
       {"nom": "Guerrier", "atk": 15, "defense": 10, "pv": 100},

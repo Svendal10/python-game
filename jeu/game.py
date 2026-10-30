@@ -1,5 +1,11 @@
+import random 
+from models import CombatRules
+from utils import (get_player_pseudo, get_heroes, get_random_monster, get_scores)
+
 # fonctioncomposer son équipe de héros
-def composer_equipe_heros():
+def make_team() : 
+    data_disponibles = get_heroes
+    dispobibles = [CombatRules]
     # récuperer les informations de la database pour chaque héros (nom, vie, attaque, défense)
     # équipe du joueur vide, 3 héros à choisir 
         # vérifier l'état de l'équipe du joueur 

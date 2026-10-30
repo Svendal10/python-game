@@ -1,5 +1,5 @@
 # afficher le menu du jeu : 
-def afficher_menu():
+def show_menu():
     print ("JEU RPG !")
     # commencer la partie 
     print ("1. Commencer la partie")
@@ -10,10 +10,10 @@ def afficher_menu():
 
 
 # affichace du classement :
-def afficher_classement(): 
+def show_scoreboard(): 
     print ("CLASSEMENT DES JOUEURS :")
     # récupérer les scores des joueurs dans la base de données
-    
+
     # affichage en rang / pseudo / score / date de la partie
     # si aucun score n'a été enregistré, afficher un message "aucun score enregistré"
 
